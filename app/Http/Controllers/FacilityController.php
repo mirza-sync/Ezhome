@@ -12,16 +12,16 @@ class FacilityController extends Controller
     {
         //
     }
+
     /**
      * Display a listing of the resource.
      *
+     * @OA\Get(
+     *      path="/api/users",
+     *      @OA\Response(response="200", description="An example endpoint")
+     * )
      * @return \Illuminate\Http\Response
-     */
-    // public function homepage(){
-    //     $facilitys = Homestay::all();
-    //     return view('index')->with('homestays', $facilitys);
-    // }
-    
+     */    
     public function index()
     {
         $facilitys = Facility::all();
